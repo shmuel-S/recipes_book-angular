@@ -69,9 +69,9 @@ recipeForm: FormGroup;
   }
 
   private initForm() {
-    let recipeName='';
-    let recipeImagePath='';
-    let recipeDescription= '';
+    let recipeName = '';
+    let recipeImagePath = '';
+    let recipeDescription = '';
     let recipeIngredients = new FormArray([]);
 
     if(this.editMode) {
