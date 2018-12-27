@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import * as firebase from 'firebase';
+import { HideInfo } from './auth/hide-info';
 
 @Component({
   selector: 'app-root',
@@ -11,8 +12,8 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     firebase.initializeApp({
-      apiKey: 'AIzaSyDtSW26c51uiGlbJodeVjyd-cSidCkfxYM',
-      authDomain: 'recipes-book-angular-1de01.firebaseapp.com'
+      apiKey: HideInfo.getApiKey(),
+      authDomain: HideInfo.getAuthDomain()
     });
   }
 
