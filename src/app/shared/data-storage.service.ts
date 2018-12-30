@@ -19,16 +19,6 @@ export class DataStorageService {
            this.recipeService.getRecipes());
   }
 
-  // getRecipes() {
-  //   this.http.get('https://recipes-book-angular-1de01.firebaseio.com/recipes.json')
-  //     .subscribe(
-  //       (response: Response) => {
-  //         const recipes: Recipe[] = response.json();
-  //         this.recipeService.setRecipes(recipes);
-  //       }
-  //     );
-  // }
-
   getRecipes() {
     const token = this.authService.getToken();
 
