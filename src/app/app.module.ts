@@ -14,7 +14,6 @@ import {AuthGuard} from './auth/auth-guard.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import {ShoppingListModule} from './shopping-list/shopping-list.module';
-import {RecipesModule} from './recipes/recipes.module';
 import {SharedModule} from './shared/shared.module';
 import {AuthModule} from './auth/auth.module';
 
@@ -29,7 +28,6 @@ import {AuthModule} from './auth/auth.module';
     BrowserModule,
     HttpModule,
     AppRoutingModule,
-    RecipesModule,
     SharedModule,
     ShoppingListModule,
     AuthModule
