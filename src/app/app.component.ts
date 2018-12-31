@@ -17,8 +17,4 @@ export class AppComponent implements OnInit {
       authDomain: HideInfo.getAuthDomain()
     });
   }
-
-  onNavigate(feature: string) {
-    this.loadedFeature = feature;
-  }
 }
